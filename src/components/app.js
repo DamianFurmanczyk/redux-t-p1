@@ -1,9 +1,15 @@
 import React, {Component} from 'react';
 
-import AnimeContainer from '../containers/anime.container';
+import AnimeListC from '../containers/anime.container';
+import AnimeDetailsC from '../containers/anime-details.container'
 
 export default class App extends Component {
   render() {
-    return (<AnimeContainer/>);
+    return (
+      <main>
+        <AnimeListC/>
+        <AnimeDetailsC/>
+      </main>
+    );
   }
 }
